@@ -1,50 +1,115 @@
-# Welcome to your Expo app 👋
+# Toronto Audio Tour Guide 🎧 🗺️
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+An interactive mobile application that provides audio-guided tours of Toronto's landmarks and attractions, built with React Native and Expo.
 
-## Get started
+## Features
 
-1. Install dependencies
+- 🎧 **Audio Tours**: Immersive audio guides for Toronto's landmarks
+- 🗺️ **Interactive Map**: Explore Toronto with an interactive map featuring key attractions
+- ⭐ **Favorites System**: Save and quickly access your favorite locations
+- 🎨 **Toronto-Themed**: Designed with Toronto's official flag colors (Blue #2D3F7D, Red #ED2939)
+- 🎮 **Advanced Audio Controls**:
+  - Play/Pause functionality
+  - Speed control (1x/2x)
+  - 10-second skip forward/backward
+  - Progress tracking
+  - Volume control
 
-   ```bash
-   npm install
-   ```
+## Getting Started
 
-2. Start the app
+### Prerequisites
 
-   ```bash
-    npx expo start
-   ```
+- Node.js (v14 or higher)
+- npm or yarn
+- Expo CLI
+- iOS Simulator or Android Emulator
 
-In the output, you'll find options to open the app in a
+### Installation
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+1. Clone the repository:
 
 ```bash
-npm run reset-project
+git clone [repository-url]
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. Install dependencies:
 
-## Learn more
+```bash
+npm install
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+3. Start the development server:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+npx expo start
+```
 
-## Join the community
+## App Structure
 
-Join our community of developers creating universal apps.
+The app consists of three main tabs:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+### 🏠 Home Tab
+
+- Welcome screen with Toronto skyline
+- Featured attractions carousel
+- Favorites collection
+- Quick access to popular tours
+
+### 🗺️ Explore Tab
+
+- Interactive map of Toronto
+- Location markers with categories:
+  - Landmarks (Red)
+  - Sports venues (Blue)
+  - Attractions (Green)
+- Information callouts with ratings and tour access
+
+### 🎧 Tour Tab
+
+- Full-screen audio player
+- Location information
+- Advanced playback controls
+- Favorite toggle functionality
+
+## Technologies Used
+
+- React Native with Expo
+- TypeScript for type safety
+- Expo Router for navigation
+- Zustand for state management
+- Expo AV for audio handling
+- React Native Maps for location features
+- React Native Reanimated for animations
+
+## Development
+
+To run the app in development mode:
+
+```bash
+# iOS
+npm run ios
+
+# Android
+npm run android
+
+# Web
+npm run web
+```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- City of Toronto for inspiration
+- Expo team for the development framework
+- React Native community for resources and support
+
+## Contact
+
+For any inquiries about this project, please reach out to [your-contact-info].
