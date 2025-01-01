@@ -1,0 +1,41 @@
+import { POI } from "@/types/poi";
+
+export const POINTS_OF_INTEREST: POI[] = [
+  {
+    id: "1",
+    name: "CN Tower",
+    latitude: 43.6426,
+    longitude: -79.3871,
+    description: "Toronto's iconic landmark and observation deck",
+    audioFile: require("@/assets/audio/cn_tower.mp3"),
+    category: "landmark",
+    rating: 4.8,
+    image: require("@/assets/images/cn-tower.jpg"),
+    duration: "3:45",
+    price: 400,
+  },
+  {
+    id: "2",
+    name: "Rogers Centre",
+    latitude: 43.6432,
+    longitude: -79.3857,
+    description: "Home of the Toronto Blue Jays",
+    audioFile: require("@/assets/audio/rogers_centre.mp3"),
+    category: "sports",
+    rating: 4.5,
+    image: require("@/assets/images/rogers-centre.jpg"),
+    duration: "2:30",
+  },
+  {
+    id: "3",
+    name: "Ripley's Aquarium",
+    latitude: 43.6424,
+    longitude: -79.386,
+    description: "World-class aquarium featuring marine life",
+    audioFile: require("@/assets/audio/ripleys_aquarium.mp3"),
+    category: "attraction",
+    rating: 4.6,
+    image: require("@/assets/images/ripleys-aquarium.jpg"),
+    duration: "4:15",
+  },
+];
